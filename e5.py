@@ -25,9 +25,9 @@ def __target__():
         except:
             pass
     while True:
-        ip = target
-        r = requests.get(ip)
-        num = 0
+            ip = target
+            r = requests.get(ip)
+            num = 0
             time.sleep(0.3)
             if r.status_code == 200:
                 print(Fore.GREEN + "[" +Fore.BLUE + num + Fore.GREEN + "]" + Fore.BLUE + " ~ " + Fore.GREEN + target + Fore.BLUE + " ==>  " + Fore.GREEN + ip)
