@@ -24,7 +24,7 @@ def __target__():
             sys.exit()
         except:
             pass
-    ip = socket.gethostbyname(target)
+    ip = target
     r = requests.get(ip)
     num = 0
     while True:
