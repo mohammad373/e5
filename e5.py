@@ -24,15 +24,15 @@ def __target__():
             sys.exit()
         except:
             pass
-   while True:
-    ip = target
-    r = requests.get(ip)
-    num = 0
-        time.sleep(0.3)
-        if r.status_code == 200:
-            print(Fore.GREEN + "[" +Fore.BLUE + num + Fore.GREEN + "]" + Fore.BLUE + " ~ " + Fore.GREEN + target + Fore.BLUE + " ==>  " + Fore.GREEN + ip)
-            num += 1
-        if r.status_code != 200:
-            print(Fore.RED + "[" + Fore.YELLOW + num + Fore.RED + "]" + Fore.YELLOW + " ~ " + Fore.RED + target + Fore.YELLOW + " ==>  " + Fore.RED + ip)
-            num += 1
+    while True:
+        ip = target
+        r = requests.get(ip)
+        num = 0
+            time.sleep(0.3)
+            if r.status_code == 200:
+                print(Fore.GREEN + "[" +Fore.BLUE + num + Fore.GREEN + "]" + Fore.BLUE + " ~ " + Fore.GREEN + target + Fore.BLUE + " ==>  " + Fore.GREEN + ip)
+                num += 1
+            if r.status_code != 200:
+                print(Fore.RED + "[" + Fore.YELLOW + num + Fore.RED + "]" + Fore.YELLOW + " ~ " + Fore.RED + target + Fore.YELLOW + " ==>  " + Fore.RED + ip)
+                num += 1
 __target__()
