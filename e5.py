@@ -16,10 +16,10 @@ def __target__():
     print(Fore.RED + "This Is Text Me By DDOS ;)")
     time.sleep(0.5)
     target = input(Fore.BLUE + "\n[" + Fore.RED + "!" + Fore.BLUE + "]" + Fore.RED + " ~ " + Fore.GREEN + "Pleass Enter Your Address Target" + Fore.YELLOW + " ==>  ")
-    if target == "" or None or " ":
+    if target == "" or None :
         try:
             time.sleep(0.4)
-            print(Fore.RED + "\n[!] ~ Error Your Target Is Not Found Or ")
+            print(Fore.RED + "\n[!] ~ Error Your Target Is Not Found Or None ;(")
             time.sleep(1)
             sys.exit()
         except:
@@ -28,6 +28,7 @@ def __target__():
     r = requests.get(ip)
     num = 0
     while True:
+        time.sleep(0.3)
         if r.status_code == 200:
             print(Fore.GREEN + "[" +Fore.BLUE + num + Fore.GREEN + "]" + Fore.BLUE + " ~ " + Fore.GREEN + target + Fore.BLUE + " ==>  " + Fore.GREEN + ip)
             num += 1
