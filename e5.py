@@ -29,7 +29,7 @@ def __target__():
     num = 0
     while True:
         if r.status_code == 200:
-            print(Fore.GREEN + "[" +Fore.BLUE + num + Fore.GREEN + "]" + Fore.BLUE + " ~ " + Fore.GREEN + target + Fore.BLUE = " ==>  " + Fore.GREEN + ip)
+            print(Fore.GREEN + "[" +Fore.BLUE + num + Fore.GREEN + "]" + Fore.BLUE + " ~ " + Fore.GREEN + target + Fore.BLUE + " ==>  " + Fore.GREEN + ip)
             num += 1
         if r.status_code != 200:
             print(Fore.RED + "[" + Fore.YELLOW + num + Fore.RED + "]" + Fore.YELLOW + " ~ " + Fore.RED + target + Fore.YELLOW + " ==>  " + Fore.RED + ip)
