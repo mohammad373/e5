@@ -26,6 +26,8 @@ def __target__():
             pass
     s = socket.gethostbyname(target)
     r = requests.get(s)
-    if r.status_code = 200:
+    if r.status_code == 200:
         print("Yesss")
+    else:
+        print("NOOOOO")
 __target__()
